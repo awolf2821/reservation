@@ -1,0 +1,17 @@
+#reservationBody{
+    display:grid;
+    grid-template-rows:repeat(5,1fr);
+    grid-template-columns:repeat(10,1fr);
+    background-color:RGB(247, 101, 101);
+}
+.label{
+    font-size:14px;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+}
+.title{
+    font-family: "Montserrat", serif;
+    font-style: normal;
+}
+
+
