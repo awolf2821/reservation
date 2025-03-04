@@ -19,24 +19,24 @@
             <form action="#" method="POST">
                 <section id="basicInfo">
                     <h3>Basic Information</h2>
-                <label for="firstName">Name(first, last):</label>
-                <input id="firstName" type="text" name="firstName" required>
-                <input id="lastName" type="text" name="lastName" required>
+                <label class="label" for="firstName">Name(first, last):</label>
+                <input class="textHalf1" id="firstName" type="text" name="firstName" required>
+                <input class="textHalf2" id="lastName" type="text" name="lastName" required>
                 <br>
-                <label for="email">Email:</label>
-                <input id="email" type="email" name="email">
+                <label class="label" for="email">Email:</label>
+                <input class="text" id="email" type="email" name="email">
                 <br>
-                <label for="phone">Phone Number:</label>
-                <input id="phone" type="tel" name="phone">
+                <label class="label" for="phone">Phone Number:</label>
+                <input class="text" id="phone" type="tel" name="phone">
                 <br>
-                <label for="headcount"># Of People in Party:</label>
-                <input id="headcount" type="number" name="headcount" required>
+                <label class="label" for="headcount"># Of People in Party:</label>
+                <input class="num" id="headcount" type="number" name="headcount" required>
                 <br>
                 </section>
                 <section id="reservationTime">
                     <h3>Reservation Time</h3>
                 <p>Please select your reservation time.</p>
-                <input list="times" name="times">
+                <input class="list" list="times" name="times">
                     <datalist id="times">
                         <option value="4:00">
                         <option value="4:15">
@@ -53,19 +53,19 @@
                 <section id="otherInfo">
                     <h3>Other Info</h3>
                 <p>Does anyone in your party have allergies?</p>
-                <input id="allergiesYes" type="radio" name="allergies" value="Y">
-                <label for="allergiesYes">Yes</label>
+                <input class="radio" id="allergiesYes" type="radio" name="allergies" value="Y">
+                <label class="label" for="allergiesYes">Yes</label>
                 <br>
-                <input id="allergiesNo" type="radio" name="allergies" value="N">
-                <label for="allergiesNo">No</label>
+                <input class="radio" id="allergiesNo" type="radio" name="allergies" value="N">
+                <label class="label" for="allergiesNo">No</label>
                 <p>Does anybody in your party need special accomodations?(e.g. wheelchair seating)</p>
-                <input id="seatingYes" type="radio" name="accSeating" value="Y">
-                <label for="seatingYes">Yes</label>
+                <input class="radio" id="seatingYes" type="radio" name="accSeating" value="Y">
+                <label class="label"for="seatingYes">Yes</label>
                 <br>
-                <input id="seatingNo" type="radio" name="accSeating" value="N">
-                <label for="seatingNo">No</label>
+                <input class="radio"  id="seatingNo" type="radio" name="accSeating" value="N">
+                <label class="radio"  for="seatingNo">No</label>
                 <p>Do you have any other notes?</p>
-                <textarea  id="notes" rows="5" cols="50" maxlength="500" placeholder="Write Here">
+                <textarea class="textarea" id="notes" rows="5" cols="50" maxlength="500" placeholder="Write Here">
                 </textarea>
                 </section>
                 <div id="submit">
