@@ -3,18 +3,91 @@
     <head>
         <title>Reserve</title>
         <script src="js/init.js"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
 <style>
 </style>
     </head>
-    <body>
-        <header id="title">
+    <body id="reservationBody">
+        <section id="navbar">
+            <img src="logo.png" id="logo" alt="logo">
+            <h2>Off The Pike At Arlington Career Center</h2>
+        </section>      
+        <header>
             <h1>Make a Reservation</h1>
         </header>
         <section id="form">
             <h2>Reservation Form</h2>
             <form action="#" method="POST">
-                <label for="name">Reservation</label>
-                <input ID="name" typee="text" name="reservationName>
+                <fieldset id="basicInfo">
+                    <h3>Basic Information</h2>
+                    <label class="label" for="firstName">First Name</label>
+                    <input class="textHalf1" id="firstName" type="text" name="firstName" required>
+                    <br>
+                    <label class="label" for="lastName">Last Name</label>
+                    <input class="textHalf2" id="lastName" type="text" name="lastName" required>
+                    <br>
+                    <label class="label" for="email">Email:</label>
+                    <input class="text" id="email" type="email" name="email">
+                    <br>
+                    <label class="label" for="phone">Phone Number:</label>
+                    <input class="text" id="phone" type="tel" name="phone">
+                    <br>
+                    <label class="label" for="headcount"># Of People in Party:</label>
+                    <input class="num" id="headcount" type="number" name="headcount" required>
+                    <br>
+                </feildset>
+                <fieldset id="reservationTimes">
+                    <h3>Reservation Time</h3>
+                    <p>Please select your reservation time.</p>
+                    <label class="label" for="reservationTime">Select Reservation Time</label>
+                    <input class="list" list="times" name="times" id="reservationTime">
+                        <datalist id="times">
+                            <option value="4:00">
+                            <option value="4:15">
+                            <option value="4:30">
+                            <option value="4:45">
+                            <option value="5:00">
+                            <option value="5:15">
+                            <option value="5:30">
+                            <option value="5:45">
+                            <option value="6:00">
+                        </datalist>
+                        <br>
+                </fieldset>
+                <fieldset id="otherInfo">
+                    <h3>Other Info</h3>
+                    <p>Does anyone in your party have allergies?</p>
+                    <input class="radio" id="allergiesYes" type="radio" name="allergies" value="Y">
+                    <label class="label" for="allergiesYes">Yes</label>
+                    <br>
+                    <input class="radio" id="allergiesNo" type="radio" name="allergies" value="N">
+                    <label class="label" for="allergiesNo">No</label>
+                    <p>Does anybody in your party need special accomodations?(e.g. wheelchair seating)</p>
+                    <input class="radio" id="seatingYes" type="radio" name="accSeating" value="Y">
+                    <label class="label"for="seatingYes">Yes</label>
+                    <br>
+                    <input class="radio"  id="seatingNo" type="radio" name="accSeating" value="N">
+                    <label class="radio"  for="seatingNo">No</label>
+                    <p>Do you have any other notes?</p>
+                    <textarea class="textarea" id="notes" rows="5" cols="50" maxlength="500" placeholder="Write Here">
+                    </textarea>
+                </feildset>
+                <br>
+                <input type="submit" value="Reserve">
+                <input type="reset" value="Clear Form">
+            </form>
+        </section>
+    </body>
+    <footer id="footer">
+    </footer>
+</html>
+
+
+
+
 
 
 
